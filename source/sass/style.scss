@@ -1,3 +1,22 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/advantages.scss";
+@import "blocks/button.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-extra.scss";
+@import "blocks/copyright.scss";
+@import "blocks/example.scss";
+@import "blocks/gift.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/maps.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/programs.scss";
+@import "blocks/selection.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+
 body {
   background: blue;
 }
