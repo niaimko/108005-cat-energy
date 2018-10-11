@@ -1,0 +1,17 @@
+.maps {
+  min-height: 362px;
+  background-color: $color-gray-lighten;
+}
+
+.maps__promo {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.maps__adress {
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  color: $color-gray-darken;
+}

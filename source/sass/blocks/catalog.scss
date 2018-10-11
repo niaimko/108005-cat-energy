@@ -1,0 +1,33 @@
+.catalog {
+  background-color: $color-white;
+}
+
+.catalog__title-link {
+  color: $color-black;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__about-field,
+.catalog__about-value {
+  color: $color-gray-darken;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__add-caption {
+  color: $color-black;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.catalog__add-intro {
+  color: $color-gray-darken;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
