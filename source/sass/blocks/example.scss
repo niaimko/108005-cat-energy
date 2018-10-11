@@ -1,7 +1,7 @@
 .example {
   min-height: 705px;
   background-color: $color-gray-lighten;
-  background-image: url(../../img/before-mobile@1x.png);
+  background-image: url("../../img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -17,13 +17,15 @@
   color: $color-gray-darken;
 }
 
-.info-list__weight, .info-list__time {
+.info-list__weight,
+.info-list__time {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
-.info-list__weight-change, .info-list__time-change {
+.info-list__weight-change,
+.info-list__time-change {
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
