@@ -5,3 +5,31 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+.example__caption {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  color: $color-gray-darken;
+}
+
+.info-list__weight, .info-list__time {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.info-list__weight-change, .info-list__time-change {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.example__cost {
+  line-height: 20px;
+  text-transform: uppercase;
+}

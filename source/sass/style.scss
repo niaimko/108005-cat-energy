@@ -38,7 +38,25 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  color: $color-black;
   background-color: $color-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 

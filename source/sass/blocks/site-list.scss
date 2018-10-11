@@ -1,3 +1,9 @@
 .site-list {
   background-color: $color-white;
 }
+
+.site-list__item {
+  a {
+    color: $color-black;
+  }
+}
