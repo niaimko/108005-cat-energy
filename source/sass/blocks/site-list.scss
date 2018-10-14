@@ -1,5 +1,13 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
   background-color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
 }
 
 .site-list__item {
