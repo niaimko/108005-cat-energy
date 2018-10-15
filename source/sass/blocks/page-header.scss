@@ -9,6 +9,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
+    justify-content: space-between;
     .main-nav__toggle {
       display: none;
     }
