@@ -7,7 +7,7 @@
 @import "blocks/copyright.scss";
 @import "blocks/example.scss";
 @import "blocks/gift.scss";
-@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
 @import "blocks/maps.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
@@ -50,10 +50,16 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
+  display: block;
+  padding: 11px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-green;
 }
 
 ul {
@@ -66,4 +72,17 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
