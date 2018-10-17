@@ -1,5 +1,4 @@
 .page-header {
-  background-color: $color-white;
   border-bottom: 1px solid $color-border;
 }
 
@@ -48,6 +47,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 20px;
+    border: 0;
+  }
+
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -64,5 +68,18 @@
       height: auto;
       opacity: 1;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 51px;
+  }
+
+  .main-page .page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
