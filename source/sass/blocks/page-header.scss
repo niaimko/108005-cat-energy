@@ -1,3 +1,85 @@
 .page-header {
-  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-header__toggle {
+  width: 24px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.page-header__nav {
+  height: 0;
+  opacity: 0;
+}
+
+.page-header__wrapper--open .page-header__nav {
+  height: 198px;
+  opacity: 1;
+}
+
+.page-header__icon {
+  margin: 0 auto;
+}
+
+.page-header__icon--open {
+  display: block;
+}
+
+.page-header__icon--close {
+  display: none;
+}
+
+.page-header__wrapper--open .page-header__icon--open {
+  display: none;
+}
+
+.page-header__wrapper--open .page-header__icon--close {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 20px;
+    border: 0;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+  }
+
+  .page-header__wrapper,
+  .page-header__wrapper--open {
+    .page-header__toggle {
+      display: none;
+    }
+
+    .page-header__nav {
+      height: auto;
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 51px;
+  }
+
+  .main-page .page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }

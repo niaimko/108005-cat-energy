@@ -1,0 +1,43 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 23px 0 17px;
+  margin: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  background-color: $color-gray-lighten;
+}
+
+.social-list__item {
+  text-align: center;
+  width: 55px;
+}
+
+.social-list__link {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    padding: 0;
+    border: 0;
+  }
+
+  .social-list__icon--vk {
+    width: 31px;
+    height: 19px;
+  }
+
+  .social-list__icon--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__icon--fb {
+    width: 14px;
+    height: 28px;
+  }
+}

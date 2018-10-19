@@ -1,0 +1,122 @@
+.intro {
+  padding-top: 26px;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 305px;
+}
+
+.intro__caption {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: $color-white;
+}
+
+.intro__slogan {
+  display: block;
+  margin-bottom: 27px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.intro__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.intro__link {
+  margin-top: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding-top: 52px;
+    padding-bottom: 533px;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-position: 30px 251px;
+    background-size: 709px 609px;
+  }
+
+  .intro__wrapper {
+    padding-left: 90px;
+  }
+
+  .intro__caption {
+    width: 420px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  .intro__slogan {
+    margin-bottom: 43px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  .intro__image {
+    display: none;
+  }
+
+  .intro__link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 246px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 144px;
+    padding-bottom: 0;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: calc(100% + 70px) 0;
+    background-size: 680px 696px;
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 602px;
+    padding-left: 80px;
+  }
+
+  .intro__caption {
+    order: 1;
+    margin-top: 79px;
+  }
+
+  .intro__slogan {
+    order: 2;
+    margin-bottom: 50px;
+  }
+
+  .intro__picture {
+    order: 4;
+  }
+
+  .intro__image {
+    display: inline-block;
+    width: 597px;
+    margin-left: -48px;
+  }
+
+  .intro__link {
+    order: 3;
+  }
+}

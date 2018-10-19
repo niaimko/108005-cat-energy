@@ -1,3 +1,240 @@
 .catalog-extra {
+  padding-top: 29px;
+  padding-bottom: 35px;
+}
+
+.catalog-extra__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.catalog-extra__wrapper::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 12px;
+  right: -20px;
+  background-color: $color-green;
+}
+
+.catalog-extra__caption {
+  display: inline-block;
+  width: auto;
+  padding-right: 23px;
+  margin-top: 0;
+  margin-bottom: 33px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  vertical-align: baseline;
   background-color: $color-white;
+}
+
+.catalog-extra__list {
+  border-top: 1px solid $color-border-catalog-second;
+}
+
+.catalog-extra__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $color-border-catalog-second;
+}
+
+.catalog-extra__title {
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-extra__options {
+  width: 100%;
+  margin-bottom: 12px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  border-spacing: 0;
+}
+
+.catalog-extra__options-cell {
+  padding: 2px 0;
+}
+
+.catalog-extra__options-cell--quantity {
+  text-align: left;
+}
+
+.catalog-extra__options-cell--price {
+  text-align: right;
+}
+
+.catalog-extra__gift {
+  padding-top: 65px;
+  padding-bottom: 44px;
+  margin-top: 39px;
+  text-align: center;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.catalog-extra__icon-gift {
+  fill: $color-white;
+}
+
+.catalog-extra__promo {
+  width: 160px;
+  margin: 60px auto 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  text-align: center;
+  color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-extra {
+    padding-bottom: 76px;
+    margin-top: -25px;
+    overflow-x: hidden;
+  }
+
+  .catalog-extra__wrapper::before {
+    width: 110%;
+    top: 20px;
+    right: -30px;
+  }
+
+  .catalog-extra__caption {
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-bottom: 79px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .catalog-extra__list {
+    border-left: 1px solid $color-border-catalog-second;
+    border-right: 1px solid $color-border-catalog-second;
+  }
+
+  .catalog-extra__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 37px 29px 38px;
+  }
+
+  .catalog-extra__title {
+    width: 30%;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .catalog-extra__options {
+    width: 40%;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog-extra__options-cell--quantity {
+    text-align: right;
+  }
+
+  .catalog-extra__options-cell--price {
+    width: 95px;
+  }
+
+  .catalog-extra__button {
+    width: 100%;
+  }
+
+  .catalog-extra__gift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 110px 71px 91px;
+    margin-top: 69px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .catalog-extra__promo {
+    width: 175px;
+    margin: 7px 0 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-extra {
+    padding-bottom: 86px;
+    margin-top: -15px;
+  }
+
+  .catalog-extra__caption {
+    padding-left: 0;
+  }
+
+  .catalog-extra__inner {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+  }
+
+  .catalog-extra__list {
+    width: 895px;
+    margin-right: 80px;
+    border: 0;
+  }
+
+  .catalog-extra__item {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 0;
+  }
+
+  .catalog-extra__item:first-child {
+    border-top: 1px solid $color-border-catalog-second;
+  }
+
+  .catalog-extra__title {
+    width: 245px;
+    margin: 0 81px 0 0;
+  }
+
+  .catalog-extra__options {
+    width: 285px;
+    margin-right: 39px;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .catalog-extra__options-cell--quantity {
+    text-align: left;
+  }
+
+  .catalog-extra__button {
+    width: 245px;
+  }
+
+  .catalog-extra__gift {
+    flex-direction: column;
+    width: 245px;
+    padding: 65px 10px 46px;
+    margin-top: 0;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .catalog-extra__promo {
+    margin-right: -12px;
+    text-align: center;
+  }
 }
