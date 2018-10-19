@@ -1,6 +1,6 @@
 .intro {
   padding-top: 26px;
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 305px;
@@ -38,7 +38,7 @@
   .intro {
     padding-top: 52px;
     padding-bottom: 533px;
-    background-image: url(../../img/index-can-tablet@1x.jpg);
+    background-image: url("../../img/index-can-tablet@1x.jpg");
     background-position: 30px 251px;
     background-size: 709px 609px;
   }
@@ -81,7 +81,7 @@
   .intro {
     padding-top: 144px;
     padding-bottom: 0;
-    background-image: url(../../img/index-background-desktop@1x.jpg);
+    background-image: url("../../img/index-background-desktop@1x.jpg");
     background-position: calc(100% + 70px) 0;
     background-size: 680px 696px;
   }
