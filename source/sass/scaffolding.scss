@@ -33,15 +33,18 @@ a {
 
 .button {
   display: block;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 9px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: $color-white;
   background-color: $color-green;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
 ul {
