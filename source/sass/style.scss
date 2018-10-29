@@ -1,10 +1,10 @@
 @import "variables.scss";
 @import "scaffolding.scss";
 @import "blocks/add-list.scss";
-@import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-extra.scss";
 @import "blocks/container.scss";
+@import "blocks/container-for-blocks.scss";
 @import "blocks/example.scss";
 @import "blocks/fields.scss";
 @import "blocks/intro.scss";
@@ -12,6 +12,7 @@
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-main.scss";
+@import "blocks/plus.scss";
 @import "blocks/program-type-list.scss";
 @import "blocks/programs.scss";
 @import "blocks/selection.scss";
