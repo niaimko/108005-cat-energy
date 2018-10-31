@@ -43,21 +43,28 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Кэт энерджи - магазин функционального питания для котов</h1>
+      <!-- блок "Вводный" -->
       <section class="intro">
-        <div class="container">
-          <div class="intro__wrapper">
-            <h2 class="intro__caption">Функциональное питание для котов</h2>
-            <span class="intro__slogan">Занялся собой? Займись котом!</span>
-            <picture class="intro__picture">
-              <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Упаковка с питанием">
+        <div class="intro__title-wrapper">
+          <div class="container-for-blocks">
+            <h2 class="intro__title">Функциональное питание для котов</h2>
+            <b class="intro__slogan">Занялся собой? Займись котом!</b>
+          </div>
+        </div>
+        <div class="intro__image-wrapper">
+          <div class="container-for-blocks intro__image-container">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+              <img class="intro__image" src="img/index-can-mobile@1x.png" alt="Кэт энерджи">
             </picture>
-            <a class="intro__link button" href="form.html">Подобрать программу</a>
+            <a class="intro__link button">Подобрать программу</a>
           </div>
         </div>
       </section>
 
       <div class="container-for-blocks">
-        <!-- блок "Наши программы -->
+        <!-- блок "Наши программы" -->
         <section class="programs">
           <h2 class="visually-hidden">Наши программы</h2>
           <ul class="programs__list">
@@ -77,7 +84,7 @@
             </li>
           </ul>
         </section>
-        <!-- новый блок "Как это работает" -->
+        <!-- блок "Как это работает" -->
         <section class="plus">
           <h2 class="plus__title">Как это работает</h2>
           <ul class="plus__list">

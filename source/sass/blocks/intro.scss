@@ -1,124 +1,156 @@
 .intro {
   margin-bottom: 22px;
-  padding-top: 26px;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% 305px;
 }
 
-.intro__caption {
-  margin-top: 0;
-  margin-bottom: 26px;
+.intro__title-wrapper {
+  padding-top: 27px;
+  padding-bottom: 168px;
+
+  text-align: center;
+  color: $color-white;
+
+  background-color: $color-bg-intro;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  text-align: center;
-  color: $color-white;
 }
 
 .intro__slogan {
   display: block;
-  margin-bottom: 27px;
+
+  font-size: 14px;
   line-height: 14px;
-  text-align: center;
+  font-weight: 400;
   text-transform: uppercase;
-  color: $color-white;
+}
+
+.intro__image-wrapper {
+  padding-top: 135px;
+}
+
+.intro__image-container {
+  position: relative;
+  z-index: 1;
 }
 
 .intro__image {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: -273px;
+  left: 50%;
+
+  width: 280px;
+  height: 271px;
+
+  transform: translate(-50%);
 }
 
 .intro__link {
-  margin-top: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     margin-bottom: 29px;
-    padding-top: 52px;
-    padding-bottom: 533px;
-    background-image: url("../../img/index-can-tablet@1x.jpg");
-    background-position: 30px 251px;
-    background-size: 709px 609px;
+    padding-top: 29px;
+    padding-bottom: 500px;
+    padding-left: 117px;
   }
 
-  .intro__wrapper {
-    padding-left: 90px;
+  .intro__title-wrapper {
+    padding: 0;
+
+    text-align: left;
+
+    background: none;
   }
 
-  .intro__caption {
-    width: 420px;
-    margin-bottom: 40px;
+  .intro__title {
+    width: 427px;
+    margin-bottom: 41px;
+
     font-size: 60px;
     line-height: 60px;
-    text-align: left;
     color: $color-black;
   }
 
   .intro__slogan {
-    margin-bottom: 43px;
+    width: 427px;
+    margin-bottom: 41px;
+
     font-size: 20px;
     line-height: 20px;
-    text-align: left;
     color: $color-black;
   }
 
+  .intro__image-wrapper {
+    padding-top: 0;
+  }
+
   .intro__image {
-    display: none;
+    top: -28px;
+    left: -88px;
+    z-index: -1;
+
+    width: 709px;
+    height: 609px;
+
+    transform: none;
   }
 
   .intro__link {
-    font-size: 20px;
-    line-height: 20px;
+    width: 245px;
+    margin-left: 2px;
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 246px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    padding-top: 144px;
-    padding-bottom: 0;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-position: calc(100% + 70px) 0;
-    background-size: 680px 696px;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 106px;
+    padding-bottom: 268px;
   }
 
-  .intro__wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 602px;
-    padding-left: 80px;
+  .intro__title-wrapper {
+    padding-left: 150px;
   }
 
-  .intro__caption {
-    order: 1;
-    margin-top: 79px;
+  .intro__title {
+    width: 489px;
+    margin-bottom: 41px;
   }
 
   .intro__slogan {
-    order: 2;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
-  .intro__picture {
-    order: 4;
+  .intro__image-wrapper {
+    padding-left: 148px;
   }
 
   .intro__image {
-    display: inline-block;
-    width: 597px;
-    margin-left: -48px;
-  }
+    top: -315px;
+    right: 335px;
+    left: auto;
 
-  .intro__link {
-    order: 3;
+    width: 552px;
+    height: 499px;
   }
 }

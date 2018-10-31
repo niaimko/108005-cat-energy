@@ -33,11 +33,10 @@ a {
 
 .button {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 9px;
+  padding: 11px 11px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $color-white;
@@ -45,6 +44,16 @@ a {
   border: 0;
   outline: 0;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-green-dark;
+  }
+
+  &:active {
+    color: $color-white-lighten;
+
+    background-color: $color-green-dark;
+  }
 }
 
 ul {
