@@ -17,7 +17,7 @@
               <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
             </picture>
           </a>
-          <button class="hamburger-button">
+          <button class="hamburger-button hamburger-button--close">
             <span class="visually-hidden">Меню</span>
           </button>
         </div>
@@ -98,46 +98,64 @@
           </ul>
         </section>
       </div>
-
+      <!-- блок "Живой пример" -->
       <section class="example">
-        <div class="container">
-          <div class="example__wrapper">
-            <h2 class="example__caption">Живой пример</h2>
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__info">
-              <ul class="example__info-list">
-                <li class="example__info-item example__info-item--weight">
-                  <span class="example__info-value">5 кг</span>
-                  <span class="example__info-subject">снижение веса</span>
+        <div class="container-for-blocks">
+          <h2 class="example__title">Живой пример</h2>
+        </div>
+        <div class="example__wrap">
+          <div class="container-for-blocks example__wrap-container">
+            <section class="example__info">
+              <p class="example__descr">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <ul class="example__list">
+                <li class="example__item">
+                  <p class="example__item-value">5 кг</p>
+                  <p class="example__item-category">Снижение веса</p>
                 </li>
-                <li class="example__info-item example__info-item--day">
-                  <span class="example__info-value">60 дней</span>
-                  <span class="example__info-subject">затрачено времени</span>
+                <li class="example__item">
+                  <p class="example__item-value">60 дней</p>
+                  <p class="example__item-category">Затрачено времени</p>
                 </li>
               </ul>
-              <p class="example__cost">
-                <span>Затраты на питание:</span>
-                <span>15 000 руб.</span>
-              </p>
-            </div>
-            <div class="example__progress">
-              <div class="example__image-wrapper">
-                <div class="example__image example__image--before"></div>
-                <div class="example__image example__image--after"></div>
+              <div class="example__item-total">
+                <p class="example__item-total-title">Затраты на питание: </p>
+                <p class="example__item-total-value">15 000 руб.</p>
               </div>
-              <div class="example__range">
-                <button class="example__range-button example__range-button--before">Было</button>
-                <div class="example__range-bar">
-                  <input class="example__range-value" type="range" min="1" max="100" value="50">
-                  <div class="example__range-toggle"></div>
+            </section>
+            <section class="example__diff">
+              <div class="example__diff-img-container">
+                <div class="example__diff-img-wrap example__diff-img-wrap--before example__diff-img-wrap--active">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                    <img class="example__diff-img example__diff-img--before" src="img/before-mobile@1x.png"alt="Фото кота до программы">
+                  </picture>
                 </div>
-                <button class="example__range-button example__range-button--after">Стало</button>
+                <div class="example__diff-img-wrap example__diff-img-wrap--after">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                    <img class="example__diff-img example__diff-img--after" src="img/after-mobile@1x.png" alt="Фото кота после программы">
+                  </picture>
+                </div>
               </div>
-            </div>
+              <div class="example__diff-range-wrap">
+                <button class="example__diff-range-btn example__diff-range-btn--before">
+                  <span>Было</span>
+                </button>
+                <div class="example__diff-range">
+                  <input class="visually-hidden example__diff-range-marker" id="diff-range" type="range" min="1" max="2" step="1" value="0">
+                  <label class="example__diff-range-label example__diff-range-label--before" for="diff-range"></label>
+                </div>
+                <button class="example__diff-range-btn example__diff-range-btn--after">
+                  <span>Стало</span>
+                </button>
+              </div>
+            </section>
           </div>
-          <div class="example__inner"></div>
         </div>
       </section>
+
       <section class="maps">
         <h2 class="visually-hidden">Адрес магазина</h2>
         <div class="maps__wrapper">
