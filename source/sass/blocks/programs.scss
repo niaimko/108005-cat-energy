@@ -149,7 +149,7 @@
       height: 200px;
     }
 
-    &--slim:after {
+    &--slim::after {
       top: 80px;
       right: 92px;
       left: auto;
@@ -158,7 +158,7 @@
       height: 194px;
     }
 
-    &--pro:after {
+    &--pro::after {
       top: 135px;
       right: 28px;
       left: auto;
@@ -240,7 +240,7 @@
       height: 100px;
     }
 
-    &--slim:after {
+    &--slim::after {
       top: 41px;
       left: 66px;
 
@@ -248,7 +248,7 @@
       height: 97px;
     }
 
-    &--pro:after {
+    &--pro::after {
       top: 69px;
       left: 34px;
 
