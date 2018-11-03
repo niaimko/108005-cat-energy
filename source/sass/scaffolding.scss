@@ -14,6 +14,17 @@
   font-weight: 500;
 }
 
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -33,11 +44,10 @@ a {
 
 .button {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 9px;
+  padding: 11px 11px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $color-white;
@@ -45,6 +55,16 @@ a {
   border: 0;
   outline: 0;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-green-dark;
+  }
+
+  &:active {
+    color: $color-white-lighten;
+
+    background-color: $color-green-dark;
+  }
 }
 
 ul {
@@ -57,6 +77,20 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
 }
 
 .visually-hidden:not(:focus):not(:active) {

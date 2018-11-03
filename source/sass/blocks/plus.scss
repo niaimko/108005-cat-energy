@@ -1,0 +1,179 @@
+.plus {
+  padding-bottom: 22px;
+}
+
+.plus__title {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $color-black;
+}
+
+.plus__item {
+  position: relative;
+
+  margin-bottom: 24px;
+  padding-left: 80px;
+}
+
+.plus__item-description {
+  position: relative;
+
+  padding-top: 2px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-gray-darken;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-green;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -75px;
+
+    width: 50px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.plus__item--leaf .plus__item-description {
+  &::after {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+}
+
+.plus__item--powder .plus__item-description {
+  &::after {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+}
+
+.plus__item--dining .plus__item-description {
+  &::after {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+}
+
+.plus__item--clock .plus__item-description {
+  &::after {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .plus {
+    padding-top: 45px;
+    padding-bottom: 59px;
+  }
+
+  .plus__title {
+    margin-bottom: 72px;
+
+    font-size: 60px;
+  }
+
+  .plus__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .plus__item {
+    width: 324px;
+    margin: 0;
+    padding: 0;
+    padding-top: 96px;
+    padding-bottom: 27px;
+
+    &:nth-child(2n) {
+      margin-bottom: 90px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      z-index: 0;
+
+      font-size: 282px;
+      line-height: 282px;
+      color: $color-gray-lighten;
+    }
+
+    &:nth-child(1)::before {
+      content: "1";
+    }
+
+    &:nth-child(2)::before {
+      content: "2";
+      left: 111px;
+    }
+
+    &:nth-child(3)::before {
+      content: "3";
+      left: 113px;
+    }
+
+    &:nth-child(4)::before {
+      content: "4";
+      left: 113px;
+    }
+  }
+
+  .plus__item-description {
+    width: 245px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      top: -112px;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: -97px;
+      left: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plus {
+    padding: 0;
+    padding-top: 73px;
+  }
+
+  .plus__item {
+    width: 245px;
+    padding-bottom: 0;
+  }
+}
