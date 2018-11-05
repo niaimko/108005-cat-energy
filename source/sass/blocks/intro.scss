@@ -10,7 +10,7 @@
   color: $color-white;
 
   background-color: $color-bg-intro;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -61,7 +61,7 @@
 
 @media (min-resolution: 1.5dppx) {
   .intro__title-wrapper {
-    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
 
