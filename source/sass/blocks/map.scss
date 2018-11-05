@@ -26,6 +26,12 @@
   }
 }
 
+@media (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .map {
     height: 396px;
@@ -40,6 +46,12 @@
       height: 106px;
     }
   }
+
+  @media (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../../img/bg-map-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -51,6 +63,12 @@
       left: 69%;
 
       width: 113px;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../../img/bg-map-desktop@2x.png");
     }
   }
 }

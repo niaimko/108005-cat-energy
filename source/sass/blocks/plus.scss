@@ -81,6 +81,32 @@
   }
 }
 
+@media (min-resolution: 1.5dppx) {
+  .plus__item--leaf .plus__item-description {
+    &::after {
+      background-image: url("../../img/advantage-leaf@2x.png");
+    }
+  }
+
+  .plus__item--powder .plus__item-description {
+    &::after {
+      background-image: url("../../img/advantage-powder@2x.png");
+    }
+  }
+
+  .plus__item--dining .plus__item-description {
+    &::after {
+      background-image: url("../../img/advantage-dining@2x.png");
+    }
+  }
+
+  .plus__item--clock .plus__item-description {
+    &::after {
+      background-image: url("../../img/advantage-clock@2x.png");
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .plus {
     padding-top: 45px;

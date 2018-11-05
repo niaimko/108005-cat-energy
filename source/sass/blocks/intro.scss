@@ -59,6 +59,12 @@
   font-weight: 400;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .intro__title-wrapper {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     margin-bottom: 29px;
