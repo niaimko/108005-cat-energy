@@ -94,7 +94,7 @@
     width: 17px;
     height: 13px;
 
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 
   &--phone {
@@ -104,7 +104,7 @@
     width: 20px;
     height: 20px;
 
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
   }
 }
 
@@ -186,7 +186,7 @@
     width: 21px;
     height: 16px;
 
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-size: cover;
   }
 }
@@ -265,6 +265,19 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: calc(100% + 20px);
+
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+
+    background-color: $color-green;
+  }
 
   &::after {
     content: "";
@@ -525,16 +538,8 @@
     line-height: 36px;
 
     &::before {
-      content: "";
-      position: absolute;
       top: 22px;
       right: calc(100% + 40px);
-
-      display: inline-flex;
-      width: 100vw;
-      height: 3px;
-
-      background-color: $color-green;
     }
 
     &::after {
@@ -734,7 +739,7 @@
       width: 21px;
       height: 16px;
 
-      background-image: url("../../img/icon-tick.svg");
+      background-image: url("../img/icon-tick.svg");
     }
   }
 

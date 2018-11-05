@@ -10,7 +10,7 @@
   color: $color-white;
 
   background-color: $color-bg-intro;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -57,6 +57,12 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .intro__title-wrapper {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
