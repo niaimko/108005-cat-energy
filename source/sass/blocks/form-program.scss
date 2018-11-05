@@ -266,6 +266,19 @@
   line-height: 24px;
   color: $color-black;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: calc(100% + 20px);
+
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+
+    background-color: $color-green;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -525,16 +538,8 @@
     line-height: 36px;
 
     &::before {
-      content: "";
-      position: absolute;
       top: 22px;
       right: calc(100% + 40px);
-
-      display: inline-flex;
-      width: 100vw;
-      height: 3px;
-
-      background-color: $color-green;
     }
 
     &::after {
