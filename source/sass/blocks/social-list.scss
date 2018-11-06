@@ -39,6 +39,10 @@
     border: 0;
   }
 
+  .social-list__item:last-child {
+    padding-right: 15px;
+  }
+
   .social-list__icon--vk {
     width: 31px;
     height: 19px;

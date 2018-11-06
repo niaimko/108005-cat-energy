@@ -82,7 +82,6 @@
 
     &--copyright {
       width: 22.88%;
-      padding-top: 6px;
     }
   }
 
@@ -122,12 +121,11 @@
 
     &--copyright {
       width: 22.88%;
-      padding-top: 6px;
     }
   }
 
   .page-footer__developer-link {
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .page-footer__developer {
