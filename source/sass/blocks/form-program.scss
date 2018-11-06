@@ -108,6 +108,14 @@
   }
 }
 
+.form-program__input:focus + .form-program__input-icon use {
+  fill: $color-green;
+}
+
+.form-program__input:invalid + .form-program__input-icon use {
+  fill: $color-error;
+}
+
 .form-program__label {
   position: relative;
 
