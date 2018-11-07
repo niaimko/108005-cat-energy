@@ -26,6 +26,16 @@
   }
 }
 
+.map__iframe {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: 362px;
+
+  border: none;
+}
+
 @media (min-resolution: 1.5dppx) {
   .map {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -45,6 +55,10 @@
       width: 124px;
       height: 106px;
     }
+  }
+
+  .map__iframe {
+    height: 396px;
   }
 
   @media (min-resolution: 1.5dppx) {
