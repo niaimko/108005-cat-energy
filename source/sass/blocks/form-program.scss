@@ -203,9 +203,9 @@
   flex-grow: 1;
   width: 140px;
   height: 45px;
-  padding-top: 13px;
+  padding-top: 6px;
   padding-right: 16px;
-  padding-bottom: 14px;
+  padding-bottom: 6px;
   padding-left: 15px;
 
   font-weight: 400;
@@ -223,10 +223,7 @@
   appearance: none;
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 18px;
     color: $color-gray-third;
-    text-transform: uppercase;
   }
 
   &:hover {
@@ -235,10 +232,6 @@
 
   &:focus {
     border: 2px solid $color-gray-third;
-  }
-
-  &:focus::placeholder {
-    font-size: 0;
   }
 
   &:invalid {
@@ -323,10 +316,7 @@
   appearance: none;
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 18px;
     color: $color-gray-third;
-    text-transform: uppercase;
   }
 }
 
@@ -524,17 +514,12 @@
     width: auto;
     height: 52px;
     margin-bottom: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 18px;
 
     font-size: 20px;
     line-height: 20px;
-
-    &::placeholder {
-      font-size: 20px;
-      line-height: 20px;
-    }
   }
 
   .form-program__wrap-title {
@@ -571,10 +556,7 @@
     line-height: 30px;
 
     &::placeholder {
-      font-size: 20px;
-      line-height: 30px;
       color: $color-gray-third;
-      text-transform: uppercase;
     }
   }
 
