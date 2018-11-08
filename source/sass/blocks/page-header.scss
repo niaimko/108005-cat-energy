@@ -112,17 +112,6 @@
   &[href]:active {
     opacity: 0.3;
   }
-
-  &--active::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: 15px;
-
-    height: 2px;
-
-    background-color: $color-green;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -197,10 +186,6 @@
 
     &--active {
       border-bottom: 2px solid $color-green;
-    }
-
-    &--active::before {
-      display: none;
     }
 
     &[href]:hover {
