@@ -288,7 +288,7 @@
 }
 
 @media (min-resolution: 1.5dppx) {
-  .index .page-header:before {
+  .index .page-header::before {
     background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }
